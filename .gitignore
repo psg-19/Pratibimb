@@ -1,0 +1,12 @@
+node_modules
+dist
+*.local
+.DS_Store
+data
+build
+.env
+.tools
+.cache
+*.db
+*.db-*
+*.zip
