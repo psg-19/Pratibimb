@@ -1,0 +1,15 @@
+services:
+  pratibimb:
+    build: .
+    ports:
+      - "8787:8787"
+    environment:
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      AI_MODEL: ${AI_MODEL:-gemini-3.8-flash}
+      DEMO_SPEED: ${DEMO_SPEED:-15}
+      # Plain HTTP on localhost/LAN; set to true behind HTTPS.
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+    volumes:
+      - pratibimb-data:/data
+volumes:
+  pratibimb-data:
