@@ -1,0 +1,90 @@
+.pl-main {
+  padding-top: 48px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.pl-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+}
+.pl-sub {
+  font-size: 13px;
+  color: var(--muted);
+}
+.pl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
+  gap: 24px;
+  align-items: start;
+}
+.pl-card {
+  background: var(--bg);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+.pl-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.pl-card__name {
+  font-size: 24px;
+  letter-spacing: -0.01em;
+}
+.pl-use {
+  min-height: 44px;
+  padding: 0 16px;
+  font-size: 13px;
+}
+.pl-tiles {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+.pl-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--h-bg);
+  border: 1px solid var(--h-mid);
+  min-width: 0;
+}
+.pl-tile__l {
+  font-size: 11px;
+  color: var(--h-ink);
+}
+.pl-tile__v {
+  font-size: 16px;
+}
+.pl-chart {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pl-alert {
+  background: var(--risk-wash);
+  border: 1px solid var(--risk-line);
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
