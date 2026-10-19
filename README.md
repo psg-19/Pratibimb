@@ -15,12 +15,12 @@ Pratibimb (Sanskrit for "reflection") is a working model of one person's metabol
 
 | Name | Role | Contact |
 |---|---|---|
-| [Full name] | [Role] | [Email or GitHub] |
-| [Full name] | [Role] | [Email or GitHub] |
+| Khushi | twin engine, backend, AI integration, tests | Khushiiii24 |
+| Pratush Shyam Gupt | frontend, design system, pages, documentation | psg-19 |
 
 ## College / incubator
 
-[College or incubator name], [City, State]
+IIIT Lucknow, Lucknow Uttar Pradesh.
 
 ## Problem statement
 
