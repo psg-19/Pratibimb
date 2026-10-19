@@ -1,0 +1,234 @@
+.hdr {
+  border-bottom: 1px solid var(--rule);
+  background: var(--bg);
+}
+.hdr__inner {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+.hdr__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.hdr__brand:hover {
+  color: var(--ink);
+}
+.hdr__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: -0.01em;
+}
+.hdr__right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+}
+.hdr__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.navlink {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 10px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.navlink:hover,
+.navlink[aria-current='page'] {
+  background: var(--tint);
+  color: var(--ink);
+}
+
+/* Palette switcher */
+.pal {
+  position: relative;
+}
+.pal__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+.pal__btn:hover,
+.pal__btn[aria-expanded='true'] {
+  background: var(--tint);
+  color: var(--ink);
+}
+.pal__swatches {
+  display: inline-flex;
+}
+.pal__swatches > span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1.5px solid var(--card);
+  margin-left: -4px;
+}
+.pal__swatches > span:first-child {
+  margin-left: 0;
+}
+.pal__panel {
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  top: calc(100% + 8px);
+  width: min(300px, calc(100vw - 32px));
+  padding: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 30px 70px -30px var(--shadow), 0 2px 8px -4px var(--shadow);
+}
+.pal__panel--left {
+  right: auto;
+  left: 0;
+}
+.pal__panel[hidden] {
+  display: none;
+}
+.pal__set {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.pal__set > legend {
+  padding: 4px 10px 8px;
+}
+.pal__opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.pal__opt:hover {
+  background: var(--bg);
+}
+.pal__opt:has(input:checked) {
+  background: var(--tint);
+}
+.pal__opt input {
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+.pal__name {
+  flex: 1 1 auto;
+}
+.pal__default {
+  color: var(--dim);
+}
+
+/* Footer */
+.ftr {
+  border-top: 1px solid var(--rule);
+}
+.ftr__inner {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--dim);
+}
+
+/* Signed-in user and demo clock bar */
+.hdr__user {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.hdr__who {
+  font-size: 13px;
+  color: var(--dim);
+  max-width: 16ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hdr__out {
+  border: 0;
+  background: transparent;
+}
+.hdr__signin {
+  border: 1px solid var(--line);
+}
+.hdr__bar {
+  border-top: 1px solid var(--rule);
+  background: var(--card);
+}
+.hdr__bar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.hdr__bar-note {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--dim);
+}
+.dclock {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.dclock__time {
+  font-size: 13px;
+  padding: 0 8px;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.dclock__btn {
+  min-height: 32px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  font-family: var(--font-mono);
+}
+.dclock__btn[aria-pressed='true'] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+}
